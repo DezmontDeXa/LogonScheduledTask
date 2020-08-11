@@ -10,17 +10,17 @@ using System.Threading.Tasks;
 
 namespace LogonSheduledTask
 {
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			LogonSheduledTaskManager.CreateTask("SomeTask", Assembly.GetEntryAssembly().Location);
+	//class Program
+	//{
+	//	static void Main(string[] args)
+	//	{
+	//		LogonSheduledTaskManager.CreateTask("SomeTask", Assembly.GetEntryAssembly().Location);
 
-			Thread.Sleep(10000);
+	//		Thread.Sleep(10000);
 
-			LogonSheduledTaskManager.DeleteTask("SomeTask");
-		}
-	}
+	//		LogonSheduledTaskManager.DeleteTask("SomeTask");
+	//	}
+	//}
 
 	public static class LogonSheduledTaskManager
 	{
